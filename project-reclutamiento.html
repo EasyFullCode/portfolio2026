@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Reclutamiento Enterprise — André Pilihuaman</title>
+  <meta name="description" content="Caso de estudio: De Excel a plataforma de reclutamiento enterprise para empresa minera." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/project.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">André<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">Sobre mí</a></li>
+      <li><a href="index.html#services">Servicios</a></li>
+      <li><a href="index.html#projects">Proyectos</a></li>
+      <li><a href="index.html#testimonials">Testimonios</a></li>
+    </ul>
+    <a href="index.html#contact" class="nav-cta">
+      <span class="dot"></span>
+      Hablemos
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- OVERLAY + MENÚ MOBILE -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html#about"        class="mobile-menu-link">Sobre mí</a></li>
+      <li><a href="index.html#services"     class="mobile-menu-link">Servicios</a></li>
+      <li><a href="index.html#projects"     class="mobile-menu-link">Proyectos</a></li>
+      <li><a href="index.html#testimonials" class="mobile-menu-link">Testimonios</a></li>
+      <li><a href="index.html#contact"      class="mobile-menu-link">Hablemos</a></li>
+    </ul>
+  </div>
+
+  <!-- ==========================================
+       HERO DEL PROYECTO
+  =========================================== -->
+  <section class="project-hero">
+    <div class="container">
+
+      <a href="index.html#projects" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M13 8H3M7.5 3.5L3 8l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Volver a proyectos
+      </a>
+
+      <div class="project-hero-cats">
+        <span class="project-cat">UX/UI</span>
+        <span class="project-cat">Minería</span>
+        <span class="project-cat">Figma</span>
+      </div>
+
+      <h1 class="project-hero-title">De Excel a plataforma de reclutamiento enterprise</h1>
+
+      <p class="project-hero-desc">
+        Diseño de un sistema integral de gestión de candidatos para una empresa minera que procesaba más de 500 postulaciones mensuales usando hojas de cálculo compartidas.
+      </p>
+
+      <div class="project-meta">
+        <div class="project-meta-item">
+          <span class="meta-label">Rol</span>
+          <span class="meta-value">UX/UI Designer</span>
+        </div>
+        <div class="project-meta-item">
+          <span class="meta-label">Duración</span>
+          <span class="meta-value">3 meses</span>
+        </div>
+        <div class="project-meta-item">
+          <span class="meta-label">Herramientas</span>
+          <span class="meta-value">Figma, FigJam, Maze</span>
+        </div>
+        <div class="project-meta-item">
+          <span class="meta-label">Sector</span>
+          <span class="meta-value">Minería</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Imagen hero del proyecto -->
+    <div class="project-hero-img-wrapper">
+      <!--
+        Reemplaza con:
+        <img src="images/project_reclutamiento.png" alt="..." class="project-hero-img">
+      -->
+      <div class="img-placeholder img-placeholder--hero">
+        <span>images/project_reclutamiento.png</span>
+        <p>Imagen principal del proyecto · Recomendado: 1440 × 680px</p>
+      </div>
+      <div class="hero-mockup-fade"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       01 — EL PROBLEMA
+  =========================================== -->
+  <section class="case-section" id="problema">
+    <div class="container">
+      <div class="case-section-inner">
+
+        <div class="case-section-header reveal">
+          <div class="tag">01 — El problema</div>
+          <h2>Un proceso de 500 postulaciones gestionado en un Excel compartido.</h2>
+        </div>
+
+        <div class="case-two-col">
+          <div class="case-text reveal reveal-delay-1">
+            <p>El equipo de Recursos Humanos de Confipetrol gestionaba sus convocatorias de personal mediante hojas de cálculo compartidas en Google Drive. Con más de 500 postulaciones mensuales, este sistema presentaba problemas críticos de trazabilidad, duplicación de datos y pérdida de candidatos calificados.</p>
+            <p>El proceso involucraba a 3 equipos distintos (RRHH, supervisores de operaciones y gerencia) que trabajaban en archivos distintos sin visibilidad cruzada, lo que generaba decisiones inconsistentes y demoras de hasta 3 semanas en cubrir una vacante.</p>
+          </div>
+          <div class="pain-points reveal reveal-delay-2">
+            <div class="pain-point">
+              <div class="pain-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L2 17h16L10 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 8v4M10 14.5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <div class="pain-title">Sin trazabilidad</div>
+                <div class="pain-desc">No había historial del estado de cada candidato ni quién tomó cada decisión.</div>
+              </div>
+            </div>
+            <div class="pain-point">
+              <div class="pain-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L2 17h16L10 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 8v4M10 14.5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <div class="pain-title">Datos duplicados</div>
+                <div class="pain-desc">El mismo candidato aparecía en múltiples convocatorias sin cruce de información.</div>
+              </div>
+            </div>
+            <div class="pain-point">
+              <div class="pain-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L2 17h16L10 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 8v4M10 14.5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <div class="pain-title">Visibilidad cero</div>
+                <div class="pain-desc">Gerencia no tenía acceso en tiempo real al avance de las convocatorias activas.</div>
+              </div>
+            </div>
+            <div class="pain-point">
+              <div class="pain-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L2 17h16L10 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 8v4M10 14.5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <div class="pain-title">Tiempo de contratación alto</div>
+                <div class="pain-desc">Hasta 3 semanas para cubrir una vacante operativa urgente.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Métricas del problema -->
+        <div class="problem-stats reveal reveal-delay-3">
+          <div class="problem-stat">
+            <div class="problem-stat-num">500+</div>
+            <div class="problem-stat-label">Postulaciones mensuales</div>
+          </div>
+          <div class="problem-stat">
+            <div class="problem-stat-num">3 sem.</div>
+            <div class="problem-stat-label">Tiempo promedio de contratación</div>
+          </div>
+          <div class="problem-stat">
+            <div class="problem-stat-num">3</div>
+            <div class="problem-stat-label">Equipos sin visibilidad cruzada</div>
+          </div>
+          <div class="problem-stat">
+            <div class="problem-stat-num">0%</div>
+            <div class="problem-stat-label">Trazabilidad del proceso</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       02 — USER PERSONA
+  =========================================== -->
+  <section class="case-section case-section--alt" id="persona">
+    <div class="container">
+      <div class="case-section-inner">
+
+        <div class="case-section-header reveal">
+          <div class="tag">02 — User persona</div>
+          <h2>Tres perfiles, tres necesidades distintas.</h2>
+        </div>
+
+        <div class="personas-grid">
+
+          <div class="persona-card reveal reveal-delay-1">
+            <div class="persona-avatar">
+              <!--
+                <img src="images/persona-1.png" alt="María Quispe">
+              -->
+              <div class="persona-avatar-placeholder">MQ</div>
+            </div>
+            <div class="persona-info">
+              <div class="persona-role-tag">Principal</div>
+              <h3 class="persona-name">María Quispe</h3>
+              <div class="persona-job">Analista de RRHH · 34 años</div>
+              <p class="persona-quote">"Necesito saber en qué etapa está cada candidato sin tener que preguntarle a todo el mundo."</p>
+              <div class="persona-details">
+                <div class="persona-detail-block">
+                  <div class="persona-detail-title">Frustraciones</div>
+                  <ul>
+                    <li>Pierde tiempo actualizando el Excel manualmente</li>
+                    <li>No recibe notificaciones cuando un supervisor evalúa</li>
+                    <li>Candidatos duplicados en diferentes hojas</li>
+                  </ul>
+                </div>
+                <div class="persona-detail-block">
+                  <div class="persona-detail-title">Objetivos</div>
+                  <ul>
+                    <li>Centralizar todas las postulaciones en un solo lugar</li>
+                    <li>Reducir el tiempo de seguimiento</li>
+                    <li>Reportar avance a gerencia sin preparar informes</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="persona-card reveal reveal-delay-2">
+            <div class="persona-avatar">
+              <div class="persona-avatar-placeholder">RV</div>
+            </div>
+            <div class="persona-info">
+              <div class="persona-role-tag persona-role-tag--secondary">Secundario</div>
+              <h3 class="persona-name">Roberto Vargas</h3>
+              <div class="persona-job">Supervisor de Operaciones · 45 años</div>
+              <p class="persona-quote">"Solo quiero revisar los CVs que me corresponden y dar mi visto bueno, sin entrar a sistemas complicados."</p>
+              <div class="persona-details">
+                <div class="persona-detail-block">
+                  <div class="persona-detail-title">Frustraciones</div>
+                  <ul>
+                    <li>Le llegan archivos por WhatsApp para aprobar</li>
+                    <li>No sabe cuáles candidatos ya evaluó</li>
+                    <li>Poca familiaridad con herramientas digitales</li>
+                  </ul>
+                </div>
+                <div class="persona-detail-block">
+                  <div class="persona-detail-title">Objetivos</div>
+                  <ul>
+                    <li>Revisar perfiles en pocos clics</li>
+                    <li>Aprobar o rechazar con comentario simple</li>
+                    <li>No tener que recordar qué ya vio</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="persona-card reveal reveal-delay-3">
+            <div class="persona-avatar">
+              <div class="persona-avatar-placeholder">LP</div>
+            </div>
+            <div class="persona-info">
+              <div class="persona-role-tag persona-role-tag--tertiary">Terciario</div>
+              <h3 class="persona-name">Luis Palomino</h3>
+              <div class="persona-job">Gerente General · 52 años</div>
+              <p class="persona-quote">"Necesito ver el estado de las contrataciones críticas sin tener que pedir un reporte cada vez."</p>
+              <div class="persona-details">
+                <div class="persona-detail-block">
+                  <div class="persona-detail-title">Frustraciones</div>
+                  <ul>
+                    <li>Solo se entera del avance en reuniones semanales</li>
+                    <li>No tiene datos concretos para tomar decisiones</li>
+                  </ul>
+                </div>
+                <div class="persona-detail-block">
+                  <div class="persona-detail-title">Objetivos</div>
+                  <ul>
+                    <li>Dashboard de KPIs de reclutamiento en tiempo real</li>
+                    <li>Alertas de vacantes críticas sin cubrir</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       03 — LA SOLUCIÓN
+  =========================================== -->
+  <section class="case-section" id="solucion">
+    <div class="container">
+      <div class="case-section-inner">
+
+        <div class="case-section-header reveal">
+          <div class="tag">03 — La solución</div>
+          <h2>Una plataforma con tres vistas, un solo flujo.</h2>
+        </div>
+
+        <div class="case-text case-text--centered reveal reveal-delay-1">
+          <p>Diseñé un sistema modular con roles diferenciados: RRHH gestiona el proceso completo, supervisores solo ven lo que les corresponde aprobar, y gerencia accede a un dashboard de métricas en tiempo real. Todo en una sola interfaz con navegación simplificada.</p>
+        </div>
+
+        <!-- Features grid -->
+        <div class="features-grid reveal reveal-delay-2">
+          <div class="feature-item">
+            <div class="feature-num">01</div>
+            <div class="feature-name">Pipeline de candidatos</div>
+            <div class="feature-desc">Vista kanban con etapas configurables: Postulado → En revisión → Entrevista → Aprobado → Contratado.</div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">02</div>
+            <div class="feature-name">Perfil unificado</div>
+            <div class="feature-desc">Un solo registro por candidato con historial completo de postulaciones, evaluaciones y documentos.</div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">03</div>
+            <div class="feature-name">Aprobación por rol</div>
+            <div class="feature-desc">Los supervisores reciben solo los candidatos que deben evaluar, con formulario simplificado de feedback.</div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">04</div>
+            <div class="feature-name">Dashboard gerencial</div>
+            <div class="feature-desc">Métricas clave: vacantes activas, tiempo promedio de cobertura, tasa de aprobación por área.</div>
+          </div>
+        </div>
+
+        <!-- Mockup principal -->
+        <div class="case-img-block reveal reveal-delay-3">
+          <div class="img-placeholder img-placeholder--wide">
+            <span>Mockup — Vista pipeline de candidatos</span>
+            <p>Reemplaza con: images/reclutamiento-pipeline.png</p>
+          </div>
+          <p class="img-caption">Vista principal del pipeline de candidatos para el rol de Analista RRHH</p>
+        </div>
+
+        <div class="case-img-row">
+          <div class="case-img-block reveal reveal-delay-1">
+            <div class="img-placeholder img-placeholder--half">
+              <span>Perfil de candidato</span>
+              <p>images/reclutamiento-perfil.png</p>
+            </div>
+            <p class="img-caption">Perfil unificado del candidato con historial</p>
+          </div>
+          <div class="case-img-block reveal reveal-delay-2">
+            <div class="img-placeholder img-placeholder--half">
+              <span>Dashboard gerencial</span>
+              <p>images/reclutamiento-dashboard.png</p>
+            </div>
+            <p class="img-caption">Vista de métricas para gerencia</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       04 — DESIGN SYSTEM
+  =========================================== -->
+  <section class="case-section case-section--alt" id="design-system">
+    <div class="container">
+      <div class="case-section-inner">
+
+        <div class="case-section-header reveal">
+          <div class="tag">04 — Design system</div>
+          <h2>Fundamentos visuales del sistema.</h2>
+        </div>
+
+        <!-- Colores -->
+        <div class="ds-block reveal reveal-delay-1">
+          <div class="ds-block-title">Paleta de color</div>
+          <div class="ds-colors">
+            <div class="ds-color-item">
+              <div class="ds-color-swatch" style="background:#1A3A6B;"></div>
+              <div class="ds-color-name">Primario</div>
+              <div class="ds-color-hex">#1A3A6B</div>
+            </div>
+            <div class="ds-color-item">
+              <div class="ds-color-swatch" style="background:#2563EB;"></div>
+              <div class="ds-color-name">Acción</div>
+              <div class="ds-color-hex">#2563EB</div>
+            </div>
+            <div class="ds-color-item">
+              <div class="ds-color-swatch" style="background:#16A34A;"></div>
+              <div class="ds-color-name">Éxito</div>
+              <div class="ds-color-hex">#16A34A</div>
+            </div>
+            <div class="ds-color-item">
+              <div class="ds-color-swatch" style="background:#F59E0B;"></div>
+              <div class="ds-color-name">Alerta</div>
+              <div class="ds-color-hex">#F59E0B</div>
+            </div>
+            <div class="ds-color-item">
+              <div class="ds-color-swatch" style="background:#DC2626;"></div>
+              <div class="ds-color-name">Error</div>
+              <div class="ds-color-hex">#DC2626</div>
+            </div>
+            <div class="ds-color-item">
+              <div class="ds-color-swatch" style="background:#F8FAFC; border: 1px solid #334155;"></div>
+              <div class="ds-color-name">Fondo</div>
+              <div class="ds-color-hex">#F8FAFC</div>
+            </div>
+            <div class="ds-color-item">
+              <div class="ds-color-swatch" style="background:#1E293B;"></div>
+              <div class="ds-color-name">Texto</div>
+              <div class="ds-color-hex">#1E293B</div>
+            </div>
+            <div class="ds-color-item">
+              <div class="ds-color-swatch" style="background:#64748B;"></div>
+              <div class="ds-color-name">Secundario</div>
+              <div class="ds-color-hex">#64748B</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tipografía -->
+        <div class="ds-block reveal reveal-delay-2">
+          <div class="ds-block-title">Tipografía</div>
+          <div class="ds-typography">
+            <div class="ds-type-item">
+              <div class="ds-type-sample ds-type-h1">Heading 1</div>
+              <div class="ds-type-meta">Inter · 32px · 700 · −0.02em</div>
+            </div>
+            <div class="ds-type-item">
+              <div class="ds-type-sample ds-type-h2">Heading 2</div>
+              <div class="ds-type-meta">Inter · 24px · 600 · −0.01em</div>
+            </div>
+            <div class="ds-type-item">
+              <div class="ds-type-sample ds-type-body">Body — El sistema permite gestionar candidatos de forma centralizada.</div>
+              <div class="ds-type-meta">Inter · 14px · 400 · 1.6 line-height</div>
+            </div>
+            <div class="ds-type-item">
+              <div class="ds-type-sample ds-type-label">ETIQUETA / LABEL</div>
+              <div class="ds-type-meta">Inter · 11px · 500 · 0.08em tracking</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Componentes -->
+        <div class="ds-block reveal reveal-delay-3">
+          <div class="ds-block-title">Componentes clave</div>
+          <div class="ds-components">
+
+            <div class="ds-component-group">
+              <div class="ds-component-label">Botones</div>
+              <div class="ds-component-row">
+                <div class="ds-btn ds-btn--primary">Aprobar candidato</div>
+                <div class="ds-btn ds-btn--secondary">Ver perfil</div>
+                <div class="ds-btn ds-btn--danger">Rechazar</div>
+                <div class="ds-btn ds-btn--ghost">Cancelar</div>
+              </div>
+            </div>
+
+            <div class="ds-component-group">
+              <div class="ds-component-label">Estados del candidato</div>
+              <div class="ds-component-row">
+                <div class="ds-badge ds-badge--blue">Postulado</div>
+                <div class="ds-badge ds-badge--yellow">En revisión</div>
+                <div class="ds-badge ds-badge--purple">Entrevista</div>
+                <div class="ds-badge ds-badge--green">Aprobado</div>
+                <div class="ds-badge ds-badge--red">Rechazado</div>
+              </div>
+            </div>
+
+            <div class="ds-component-group">
+              <div class="ds-component-label">Input de búsqueda</div>
+              <div class="ds-input-wrapper">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="4.5" stroke="#64748B" stroke-width="1.5"/><path d="M10.5 10.5L13 13" stroke="#64748B" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <span class="ds-input-placeholder">Buscar por nombre, puesto o área...</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       05 — USER FLOW
+  =========================================== -->
+  <section class="case-section" id="user-flow">
+    <div class="container">
+      <div class="case-section-inner">
+
+        <div class="case-section-header reveal">
+          <div class="tag">05 — User flow</div>
+          <h2>El flujo del proceso de selección de punta a punta.</h2>
+        </div>
+
+        <div class="case-text reveal reveal-delay-1">
+          <p>Mapeé el flujo completo desde que RRHH crea una convocatoria hasta que el candidato es contratado, incluyendo los puntos de decisión de cada rol involucrado.</p>
+        </div>
+
+        <!-- User flow como imagen -->
+        <div class="case-img-block reveal reveal-delay-2">
+          <div class="img-placeholder img-placeholder--flow">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="margin-bottom:12px;opacity:0.3">
+              <rect x="2" y="14" width="12" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="18" y="14" width="12" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="34" y="14" width="12" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 18h4M30 18h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M24 22v8M24 30l-4 4M24 30l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>User Flow — Proceso de selección completo</span>
+            <p>Reemplaza con: images/reclutamiento-userflow.png<br>Recomendado: imagen ancha · mínimo 1440px de ancho</p>
+          </div>
+          <p class="img-caption">Flujo completo: desde la creación de convocatoria hasta la contratación del candidato</p>
+        </div>
+
+        <!-- Etapas del flujo en texto como complemento -->
+        <div class="flow-steps reveal reveal-delay-3">
+          <div class="flow-step">
+            <div class="flow-step-num">1</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Creación de convocatoria</div>
+              <div class="flow-step-desc">RRHH define el puesto, requisitos, área solicitante y fecha límite.</div>
+            </div>
+          </div>
+          <div class="flow-connector"></div>
+          <div class="flow-step">
+            <div class="flow-step-num">2</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Recepción de postulaciones</div>
+              <div class="flow-step-desc">Los candidatos ingresan al sistema y son asignados automáticamente a la convocatoria.</div>
+            </div>
+          </div>
+          <div class="flow-connector"></div>
+          <div class="flow-step">
+            <div class="flow-step-num">3</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Filtro inicial por RRHH</div>
+              <div class="flow-step-desc">Revisión de requisitos mínimos. Los candidatos pasan a "En revisión" o son descartados.</div>
+            </div>
+          </div>
+          <div class="flow-connector"></div>
+          <div class="flow-step">
+            <div class="flow-step-num">4</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Evaluación del supervisor</div>
+              <div class="flow-step-desc">El supervisor del área revisa los perfiles pre-filtrados y da su aprobación con comentarios.</div>
+            </div>
+          </div>
+          <div class="flow-connector"></div>
+          <div class="flow-step">
+            <div class="flow-step-num">5</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Entrevista y decisión final</div>
+              <div class="flow-step-desc">RRHH programa la entrevista, registra el resultado y genera la oferta de contratación.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       RESULTADOS
+  =========================================== -->
+  <section class="case-section case-section--alt" id="resultados">
+    <div class="container">
+      <div class="case-section-inner">
+
+        <div class="case-section-header reveal">
+          <div class="tag">Resultados</div>
+          <h2>Impacto medible en el proceso de contratación.</h2>
+        </div>
+
+        <div class="results-grid">
+          <div class="result-item reveal reveal-delay-1">
+            <div class="result-num">−60%</div>
+            <div class="result-label">Tiempo de contratación</div>
+            <div class="result-desc">De 3 semanas a menos de 8 días promedio para cubrir una vacante.</div>
+          </div>
+          <div class="result-item reveal reveal-delay-2">
+            <div class="result-num">100%</div>
+            <div class="result-label">Trazabilidad</div>
+            <div class="result-desc">Cada acción queda registrada con fecha, responsable y comentario.</div>
+          </div>
+          <div class="result-item reveal reveal-delay-3">
+            <div class="result-num">3→1</div>
+            <div class="result-label">Fuente de verdad</div>
+            <div class="result-desc">Se eliminaron los archivos paralelos; toda la información vive en un solo sistema.</div>
+          </div>
+          <div class="result-item reveal reveal-delay-4">
+            <div class="result-num">94%</div>
+            <div class="result-label">Satisfacción del equipo</div>
+            <div class="result-desc">Medido en encuesta post-lanzamiento con el equipo de RRHH y supervisores.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       NAVEGACIÓN ENTRE PROYECTOS
+  =========================================== -->
+  <section class="project-nav-section">
+    <div class="container">
+      <div class="project-nav-inner">
+        <a href="index.html#projects" class="project-nav-back">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7.5 3.5L3 8l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Todos los proyectos
+        </a>
+        <a href="project-reclamos.html" class="project-nav-next">
+          Siguiente proyecto
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M8.5 3.5L13 8l-4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-copy">© 2026 Diseñado y desarrollado por <span>André Pilihuaman</span></div>
+        <div class="footer-links">
+          <a href="index.html#about">Sobre mí</a>
+          <a href="index.html#services">Servicios</a>
+          <a href="index.html#projects">Proyectos</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/andr%C3%A9-pillihuaman/" target="_blank" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://www.behance.net/andrepillihu1" target="_blank" aria-label="Behance">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M7.803 5.731c.589 0 1.119.051 1.605.155.483.103.895.273 1.243.508.343.235.611.547.804.938.187.387.28.86.28 1.406 0 .604-.135 1.107-.404 1.512-.269.406-.673.737-1.207.994.724.226 1.267.615 1.624 1.169.357.553.538 1.22.538 2.002 0 .605-.113 1.127-.343 1.568-.226.437-.543.798-.95 1.077-.406.278-.877.49-1.415.624-.54.136-1.114.203-1.718.203H0V5.731h7.803zm-.351 4.972c.49 0 .891-.119 1.2-.354.31-.238.464-.604.464-1.1 0-.27-.05-.498-.148-.682-.099-.183-.237-.33-.415-.437-.178-.106-.386-.181-.623-.226-.237-.044-.49-.066-.758-.066H3.463v2.865h3.989zm.19 5.218c.285 0 .556-.027.808-.08.252-.054.473-.141.664-.262.19-.12.342-.284.454-.49.111-.207.167-.466.167-.774 0-.614-.172-1.058-.516-1.334-.341-.276-.809-.414-1.396-.414H3.463v3.354h4.179zm12.522-7.465c.586 0 1.131.1 1.629.3.5.2.928.488 1.287.862.36.375.637.83.834 1.366.197.537.295 1.14.295 1.81v.91H15.88c.043.666.252 1.178.635 1.539.38.36.879.54 1.506.54.46 0 .864-.104 1.21-.31.345-.207.575-.45.69-.73h2.836c-.44 1.28-1.102 2.196-1.985 2.743-.884.548-1.956.82-3.213.82-.872 0-1.66-.139-2.36-.416-.698-.278-1.297-.677-1.794-1.197-.497-.52-.882-1.15-1.156-1.89-.275-.742-.413-1.572-.413-2.49 0-.872.136-1.679.407-2.421.27-.741.652-1.375 1.146-1.905.493-.53 1.088-.941 1.785-1.232.698-.29 1.47-.436 2.32-.436zm.016 2.26c-.555 0-1.002.154-1.343.46-.34.308-.553.742-.637 1.301h3.903c-.073-.574-.277-1.01-.615-1.307-.337-.299-.775-.454-1.308-.454zm-2.08-5.252h4.826v1.61h-4.826v-1.61z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
