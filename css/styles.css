@@ -967,7 +967,8 @@ footer { padding: 40px 0; border-top: 1px solid var(--border); }
   .projects-grid { grid-template-columns: 1fr; }
   .project-card:first-child { grid-column: span 1; aspect-ratio: 4/3; }
   .project-overlay  { opacity: 0; }
-  .project-title {font-size: 20px;}
+  .project-title {font-size: 20px; line-height: 1em;}
+  .project-cat {font-size: 10px;}
   .project-link-btn { opacity: 0; transform: scale(0.8); }
   .project-thumb,
   .project-thumb-placeholder { transform: none !important; }
