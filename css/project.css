@@ -51,7 +51,7 @@
 }
 .project-meta-item {
   flex: 1;
-  padding: 24px 0;
+  padding: 24px 8px;
   border-right: 1px solid var(--border);
 }
 .project-meta-item:last-child { border-right: none; }
@@ -398,8 +398,8 @@
   font-weight: 500;
   cursor: default;
 }
-.ds-btn--primary  { background: #2563EB; color: #fff; }
-.ds-btn--secondary{ background: transparent; color: #2563EB; border: 1px solid #2563EB; }
+.ds-btn--primary  { background: #EE781E; color: #fff; }
+.ds-btn--secondary{ background: transparent; color: #EE781E; border: 1px solid #EE781E; }
 .ds-btn--danger   { background: #DC2626; color: #fff; }
 .ds-btn--ghost    { background: transparent; color: var(--text-muted); border: 1px solid var(--border); }
 
@@ -409,9 +409,9 @@
   font-size: 12px;
   font-weight: 500;
 }
-.ds-badge--blue   { background: rgba(37,99,235,0.15); color: #60a5fa; border: 1px solid rgba(37,99,235,0.3); }
+.ds-badge--blue   { background: rgba(37,99,235,0.15); color: #155DFC; border: 1px solid rgba(37,99,235,0.3); }
 .ds-badge--yellow { background: rgba(245,158,11,0.15); color: #fbbf24; border: 1px solid rgba(245,158,11,0.3); }
-.ds-badge--purple { background: rgba(139,92,246,0.15); color: #a78bfa; border: 1px solid rgba(139,92,246,0.3); }
+.ds-badge--purple { background: rgba(139,92,246,0.15); color: #EE781E; border: 1px solid rgba(139,92,246,0.3); }
 .ds-badge--green  { background: rgba(22,163,74,0.15);  color: #4ade80; border: 1px solid rgba(22,163,74,0.3); }
 .ds-badge--red    { background: rgba(220,38,38,0.15);  color: #f87171; border: 1px solid rgba(220,38,38,0.3); }
 
