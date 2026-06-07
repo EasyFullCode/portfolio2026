@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>André Pillihuaman — UX/UI Designer</title>
+  <title>André Pilihuaman — UX/UI Designer</title>
   <meta name="description" content="Diseñador UX/UI especializado en interfaces claras, sistemas de diseño y productos digitales que facilitan el trabajo." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="icon" type="image/png" href="Images/favicon.svg" />
+  <!-- <link rel="icon" type="image/png" href="images/favicon.png" /> -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -21,20 +21,40 @@
 
   <!-- NAV -->
   <nav id="nav">
-    <a href="#hero" class="nav-logo">André<span>.</span></a>
+    <a href="index.html" class="nav-logo">André<span>.</span></a>
     <ul class="nav-links">
       <li><a href="#about">Sobre mí</a></li>
       <li><a href="#services">Servicios</a></li>
       <li><a href="#projects">Proyectos</a></li>
       <li><a href="#testimonials">Testimonios</a></li>
     </ul>
-    <a href="#contact" class="nav-cta">
-      <span class="dot"></span>
-      Hablemos
-    </a>
-    <button class="hamburger" id="hamburger" aria-label="Menú">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+        <!-- Luna — visible en dark -->
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+        <!-- Sol — visible en light -->
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+      </button>
+      <a href="#contact" class="nav-cta">
+        <span class="dot"></span>
+        Hablemos
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </nav>
 
   <!-- OVERLAY + MENÚ MOBILE -->
@@ -277,7 +297,7 @@
       <div class="projects-grid">
 
         <div class="project-card reveal">
-          <img src="images/project_reclutamiento (1).webp" class="project-thumb" alt="Sistema de Reclutamiento Confipetrol">
+          <img src="images/project_reclutamiento.png" class="project-thumb" alt="Sistema de Reclutamiento Confipetrol">
           <div class="project-overlay">
             <div class="project-cats">
               <span class="project-cat">UX/UI</span>
@@ -287,13 +307,13 @@
             <div class="project-title">De Excel a plataforma de reclutamiento enterprise</div>
             <div class="project-client">Sistema de reclutamiento para empresa minera</div>
           </div>
-          <a href="project-reclutamiento.html" class="project-link-btn" aria-label="Ver proyecto">
+          <a href="#" class="project-link-btn" aria-label="Ver proyecto">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H7M14 4v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
 
         <div class="project-card reveal reveal-delay-1">
-          <img src="images/project_reclamos (1).webp" class="project-thumb" alt="Centralización de reclamos veterinaria">
+          <img src="images/project_reclamos.png" class="project-thumb" alt="Centralización de reclamos veterinaria">
           <div class="project-overlay">
             <div class="project-cats">
               <span class="project-cat">Salud veterinaria</span>
@@ -309,7 +329,7 @@
         </div>
 
         <div class="project-card reveal reveal-delay-2">
-          <img src="images/project_caylet (1).webp" class="project-thumb" alt="Catálogo digital Caylet">
+          <img src="images/project_caylet.png" class="project-thumb" alt="Catálogo digital Caylet">
           <div class="project-overlay">
             <div class="project-cats">
               <span class="project-cat">Retail</span>
@@ -437,7 +457,7 @@
   <footer>
     <div class="container">
       <div class="footer-inner">
-        <div class="footer-copy">© 2026 Diseñado y desarrollado por <span>André Pillihuaman</span></div>
+        <div class="footer-copy">© 2026 Diseñado y desarrollado por <span>André Pilihuaman</span></div>
         <div class="footer-links">
           <a href="#about">Sobre mí</a>
           <a href="#services">Servicios</a>

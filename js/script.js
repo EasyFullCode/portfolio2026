@@ -1,4 +1,33 @@
 /* =============================================
+   THEME TOGGLE — dark / light
+============================================= */
+const themeToggle = document.getElementById('themeToggle');
+const root        = document.documentElement;
+
+function getInitialTheme() {
+  const saved = localStorage.getItem('theme');
+  if (saved) return saved;
+  return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+}
+function applyTheme(theme) {
+  root.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme);
+}
+
+applyTheme(getInitialTheme());
+
+themeToggle.addEventListener('click', () => {
+  const current = root.getAttribute('data-theme');
+  applyTheme(current === 'dark' ? 'light' : 'dark');
+});
+
+window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
+  if (!localStorage.getItem('theme')) {
+    applyTheme(e.matches ? 'light' : 'dark');
+  }
+});
+
+/* =============================================
    CURSOR PERSONALIZADO
 ============================================= */
 const cursor    = document.getElementById('cursor');
