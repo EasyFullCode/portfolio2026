@@ -72,7 +72,7 @@
   color: var(--text);
 }
 
-/* Hero image */
+/* Hero image
 .project-hero-img-wrapper {
   position: relative;
   width: 100vw;
@@ -86,7 +86,7 @@
   display: block;
   object-fit: cover;
   object-position: top center;
-}
+}*/
 
 /* ---- SECCIONES DE CASO ---- */
 .case-section {
