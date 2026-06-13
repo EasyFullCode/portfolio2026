@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sistema de Reclutamiento Enterprise — André Pilihuaman</title>
-  <meta name="description" content="Caso de estudio: De Excel a plataforma de reclutamiento enterprise para empresa minera." />
+  <title>Centralización de reclamos — André Pilihuaman</title>
+  <meta name="description" content="Caso de estudio: Centralización de reclamos en plataforma enterprise para Biomont, empresa médico veterinaria." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +12,7 @@
 
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/project.css" />
-  <link rel="icon" type="image/png" href="Images/favicon.svg" />
+  <link rel="icon" type="image/png" href="images/favicon.svg" />
 </head>
 <body>
 
@@ -24,31 +24,17 @@
   <nav id="nav">
     <a href="index.html" class="nav-logo">André<span>.</span></a>
     <ul class="nav-links">
-      <li><a href="#about">Sobre mí</a></li>
-      <li><a href="#services">Servicios</a></li>
-      <li><a href="#projects">Proyectos</a></li>
-      <li><a href="#testimonials">Testimonios</a></li>
+      <li><a href="index.html#about">Sobre mí</a></li>
+      <li><a href="index.html#services">Servicios</a></li>
+      <li><a href="index.html#projects">Proyectos</a></li>
+      <li><a href="index.html#testimonials">Testimonios</a></li>
     </ul>
     <div class="nav-right">
       <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
-        <!-- Luna — visible en dark -->
-        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
-        </svg>
-        <!-- Sol — visible en light -->
-        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="5"/>
-          <line x1="12" y1="1" x2="12" y2="3"/>
-          <line x1="12" y1="21" x2="12" y2="23"/>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-          <line x1="1" y1="12" x2="3" y2="12"/>
-          <line x1="21" y1="12" x2="23" y2="12"/>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-        </svg>
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
       </button>
-      <a href="#contact" class="nav-cta">
+      <a href="index.html#contact" class="nav-cta">
         <span class="dot"></span>
         Hablemos
       </a>
@@ -70,29 +56,25 @@
     </ul>
   </div>
 
-  <!-- ==========================================
-       HERO DEL PROYECTO
-  =========================================== -->
+  <!-- HERO -->
   <section class="project-hero">
     <div class="container">
 
       <a href="index.html#projects" class="back-link">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M13 8H3M7.5 3.5L3 8l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7.5 3.5L3 8l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         Volver a proyectos
       </a>
 
       <div class="project-hero-cats">
-        <span class="project-cat">UX/UI</span>
-        <span class="project-cat">Minería</span>
-        <span class="project-cat">Figma</span>
+        <span class="project-cat-hero">Salud veterinaria</span>
+        <span class="project-cat-hero">UX/UI</span>
+        <span class="project-cat-hero">Figma</span>
       </div>
 
-      <h1 class="project-hero-title">De Excel a plataforma de reclutamiento enterprise</h1>
+      <h1 class="project-hero-title">Centralización de reclamos en plataforma enterprise</h1>
 
       <p class="project-hero-desc">
-        Diseño de un sistema integral de gestión de candidatos para una empresa minera que procesaba más de 500 postulaciones mensuales usando hojas de cálculo compartidas.
+        Diseño de una plataforma que reemplazó cuatro Excels y tres canales de comunicación por un único sistema de gestión de reclamos para los proveedores de Biomont, empresa médico veterinaria líder en Perú.
       </p>
 
       <div class="project-meta">
@@ -102,7 +84,7 @@
         </div>
         <div class="project-meta-item">
           <span class="meta-label">Duración</span>
-          <span class="meta-value">2 meses</span>
+          <span class="meta-value">1 mes</span>
         </div>
         <div class="project-meta-item">
           <span class="meta-label">Herramientas</span>
@@ -110,40 +92,32 @@
         </div>
         <div class="project-meta-item">
           <span class="meta-label">Sector</span>
-          <span class="meta-value">Minería</span>
+          <span class="meta-value">Salud veterinaria</span>
         </div>
       </div>
 
     </div>
 
-    <!-- Imagen hero del proyecto
-    <div class="project-hero-img-wrapper">
-        Reemplaza con:
-        <img src="images/project_reclutamiento.png" alt="..." class="project-hero-img">
-      <div class="img-placeholder img-placeholder--hero">
-        <span>images/project_reclutamiento.png</span>
-        <p>Imagen principal del proyecto · Recomendado: 1440 × 680px</p>
-      </div>
+    <!--<div class="project-hero-img-wrapper">
+      <img src="images/project_reclamos.png" alt="Plataforma de reclamos Biomont" class="project-hero-img" />
       <div class="hero-mockup-fade"></div>
-    </div>
-  </section>-->
+    </div>-->
+  </section>
 
-  <!-- ==========================================
-       01 — EL PROBLEMA
-  =========================================== -->
+  <!-- 01 — EL PROBLEMA -->
   <section class="case-section" id="problema">
     <div class="container">
       <div class="case-section-inner">
 
         <div class="case-section-header reveal">
           <div class="tag">01 — El problema</div>
-          <h2>Un proceso de 500 postulaciones gestionado en un Excel compartido.</h2>
+          <h2>Un reclamo viajaba por WhatsApp, email, papel y cuatro Excels antes de ser atendido.</h2>
         </div>
 
         <div class="case-two-col">
           <div class="case-text reveal reveal-delay-1">
-            <p>El equipo de Recursos Humanos de Confipetrol gestionaba sus convocatorias de personal mediante hojas de cálculo compartidas en Google Drive. Con más de 500 postulaciones mensuales, este sistema presentaba problemas críticos de trazabilidad, duplicación de datos y pérdida de candidatos calificados.</p>
-            <p>El proceso involucraba a 3 equipos distintos (RRHH, supervisores de operaciones y gerencia) que trabajaban en archivos distintos sin visibilidad cruzada, lo que generaba decisiones inconsistentes y demoras de hasta 3 semanas en cubrir una vacante.</p>
+            <p>Los Representantes Técnicos Comerciales (RTC) de Biomont recibían reclamos de proveedores por múltiples canales simultáneos: WhatsApp, visitas presenciales, email y llamadas telefónicas. Una vez recibido el reclamo, el RTC debía identificar manualmente a qué área correspondía — Calidad, Farmacovigilancia, Almacén o Marketing — y transferirlo al Excel específico de esa área.</p>
+            <p>El proceso se complicaba aún más cuando el proveedor necesitaba adjuntar documentos como guías de remisión o fotos del producto defectuoso. El RTC debía coordinar por separado el envío de esos archivos y luego incorporarlos manualmente al registro. Un solo reclamo podía tomar más de 20 minutos en quedar correctamente registrado.</p>
           </div>
           <div class="pain-points reveal reveal-delay-2">
             <div class="pain-point">
@@ -151,8 +125,8 @@
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L2 17h16L10 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 8v4M10 14.5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
               </div>
               <div>
-                <div class="pain-title">Sin trazabilidad</div>
-                <div class="pain-desc">No había historial del estado de cada candidato ni quién tomó cada decisión.</div>
+                <div class="pain-title">4 canales de entrada</div>
+                <div class="pain-desc">WhatsApp, email, visita presencial y llamada. Sin trazabilidad entre canales.</div>
               </div>
             </div>
             <div class="pain-point">
@@ -160,8 +134,8 @@
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L2 17h16L10 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 8v4M10 14.5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
               </div>
               <div>
-                <div class="pain-title">Datos duplicados</div>
-                <div class="pain-desc">El mismo candidato aparecía en múltiples convocatorias sin cruce de información.</div>
+                <div class="pain-title">4 Excels paralelos</div>
+                <div class="pain-desc">Cada área (Calidad, Farmacovigilancia, Almacén, Marketing) tenía su propio formato sin conexión entre sí.</div>
               </div>
             </div>
             <div class="pain-point">
@@ -169,8 +143,8 @@
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L2 17h16L10 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 8v4M10 14.5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
               </div>
               <div>
-                <div class="pain-title">Visibilidad cero</div>
-                <div class="pain-desc">Gerencia no tenía acceso en tiempo real al avance de las convocatorias activas.</div>
+                <div class="pain-title">+20 min por reclamo</div>
+                <div class="pain-desc">El tiempo de registro se disparaba cuando el proveedor debía adjuntar guías de remisión u otros documentos.</div>
               </div>
             </div>
             <div class="pain-point">
@@ -178,30 +152,29 @@
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L2 17h16L10 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 8v4M10 14.5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
               </div>
               <div>
-                <div class="pain-title">Tiempo de contratación alto</div>
-                <div class="pain-desc">Hasta 3 semanas para cubrir una vacante operativa urgente.</div>
+                <div class="pain-title">Sin visibilidad del estado</div>
+                <div class="pain-desc">El proveedor no sabía en qué etapa estaba su reclamo ni quién lo estaba atendiendo.</div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Métricas del problema -->
         <div class="problem-stats reveal reveal-delay-3">
           <div class="problem-stat">
-            <div class="problem-stat-num">500+</div>
-            <div class="problem-stat-label">Postulaciones mensuales</div>
+            <div class="problem-stat-num">4+</div>
+            <div class="problem-stat-label">Canales de recepción</div>
           </div>
           <div class="problem-stat">
-            <div class="problem-stat-num">3 sem.</div>
-            <div class="problem-stat-label">Tiempo promedio de contratación</div>
+            <div class="problem-stat-num">4</div>
+            <div class="problem-stat-label">Excels sin conexión</div>
           </div>
           <div class="problem-stat">
-            <div class="problem-stat-num">3</div>
-            <div class="problem-stat-label">Equipos sin visibilidad cruzada</div>
+            <div class="problem-stat-num">+20 min</div>
+            <div class="problem-stat-label">Por registro de reclamo</div>
           </div>
           <div class="problem-stat">
-            <div class="problem-stat-num">0%</div>
-            <div class="problem-stat-label">Trazabilidad del proceso</div>
+            <div class="problem-stat-num">6</div>
+            <div class="problem-stat-label">Roles involucrados</div>
           </div>
         </div>
 
@@ -209,45 +182,43 @@
     </div>
   </section>
 
-  <!-- ==========================================
-       02 — USER PERSONA
-  =========================================== -->
+  <!-- 02 — USER PERSONA -->
   <section class="case-section case-section--alt" id="persona">
     <div class="container">
       <div class="case-section-inner">
 
         <div class="case-section-header reveal">
           <div class="tag">02 — User persona</div>
-          <h2>Tres perfiles, tres necesidades distintas.</h2>
+          <h2>El usuario principal no es el cliente final, es el intermediario que gestiona todo.</h2>
         </div>
 
         <div class="personas-grid">
 
           <div class="persona-card reveal reveal-delay-1">
             <div class="persona-avatar">
-                <img src="Images_projects/Reclutamiento_Confipetrol/maría.png" alt="María Quispe">
-              <div class="persona-avatar-placeholder">MQ</div>
+              <img src="Images_projects/Reclamos_Biomont/carlos.png" alt="">
             </div>
             <div class="persona-info">
               <div class="persona-role-tag">Principal</div>
-              <h3 class="persona-name">María Quispe</h3>
-              <div class="persona-job">Analista de RRHH · 34 años</div>
-              <p class="persona-quote">"Necesito saber en qué etapa está cada candidato sin tener que preguntarle a todo el mundo."</p>
+              <h3 class="persona-name">Carlos Mendoza</h3>
+              <div class="persona-job">Representante Técnico Comercial · 31 años</div>
+              <p class="persona-quote">"Paso más tiempo coordinando por WhatsApp que resolviendo el reclamo en sí. Necesito registrar todo en un solo lugar desde donde esté."</p>
               <div class="persona-details">
                 <div class="persona-detail-block">
                   <div class="persona-detail-title">Frustraciones</div>
                   <ul>
-                    <li>Pierde tiempo actualizando el Excel manualmente</li>
-                    <li>No recibe notificaciones cuando un supervisor evalúa</li>
-                    <li>Candidatos duplicados en diferentes hojas</li>
+                    <li>Recibe reclamos por 4 canales distintos simultáneamente</li>
+                    <li>Debe transferir manualmente al Excel correcto del área</li>
+                    <li>Pierde tiempo esperando que el proveedor le reenvíe documentos</li>
+                    <li>No sabe en qué estado quedó el reclamo una vez transferido</li>
                   </ul>
                 </div>
                 <div class="persona-detail-block">
                   <div class="persona-detail-title">Objetivos</div>
                   <ul>
-                    <li>Centralizar todas las postulaciones en un solo lugar</li>
-                    <li>Reducir el tiempo de seguimiento</li>
-                    <li>Reportar avance a gerencia sin preparar informes</li>
+                    <li>Registrar un reclamo en menos de 5 minutos</li>
+                    <li>Adjuntar documentos del proveedor desde el mismo formulario</li>
+                    <li>Ver el historial de reclamos de cada proveedor</li>
                   </ul>
                 </div>
               </div>
@@ -256,29 +227,28 @@
 
           <div class="persona-card reveal reveal-delay-2">
             <div class="persona-avatar">
-               <img src="Images_projects/Reclutamiento_Confipetrol/roberto.png" alt="Roberto Vargas">
-              <div class="persona-avatar-placeholder">RV</div>
+              <img src="Images_projects/Reclamos_Biomont/patricia.png" alt="">
             </div>
             <div class="persona-info">
               <div class="persona-role-tag persona-role-tag--secondary">Secundario</div>
-              <h3 class="persona-name">Roberto Vargas</h3>
-              <div class="persona-job">Supervisor de Operaciones · 45 años</div>
-              <p class="persona-quote">"Solo quiero revisar los CVs que me corresponden y dar mi visto bueno, sin entrar a sistemas complicados."</p>
+              <h3 class="persona-name">Patricia Huanca</h3>
+              <div class="persona-job">Supervisora Comercial · 40 años</div>
+              <p class="persona-quote">"Necesito saber cuántos reclamos tiene cada RTC y si hay alguno vencido sin atender. No quiero tener que llamarlos uno por uno."</p>
               <div class="persona-details">
                 <div class="persona-detail-block">
                   <div class="persona-detail-title">Frustraciones</div>
                   <ul>
-                    <li>Le llegan archivos por WhatsApp para aprobar</li>
-                    <li>No sabe cuáles candidatos ya evaluó</li>
-                    <li>Poca familiaridad con herramientas digitales</li>
+                    <li>No tiene visibilidad del volumen de reclamos por RTC</li>
+                    <li>Se entera de reclamos críticos tarde o por casualidad</li>
+                    <li>No puede medir el desempeño del equipo</li>
                   </ul>
                 </div>
                 <div class="persona-detail-block">
                   <div class="persona-detail-title">Objetivos</div>
                   <ul>
-                    <li>Revisar perfiles en pocos clics</li>
-                    <li>Aprobar o rechazar con comentario simple</li>
-                    <li>No tener que recordar qué ya vio</li>
+                    <li>Dashboard con reclamos por estado y por RTC</li>
+                    <li>Alertas de reclamos sin atender tras X días</li>
+                    <li>Reportes exportables para reuniones</li>
                   </ul>
                 </div>
               </div>
@@ -287,27 +257,28 @@
 
           <div class="persona-card reveal reveal-delay-3">
             <div class="persona-avatar">
-              <img src="Images_projects/Reclutamiento_Confipetrol/luis.png" alt="Luis Palomino">
-              <div class="persona-avatar-placeholder">LP</div>
+              <img src="Images_projects/Reclamos_Biomont/jorge.png" alt="">
             </div>
             <div class="persona-info">
-              <div class="persona-role-tag persona-role-tag--tertiary">Terciario</div>
-              <h3 class="persona-name">Luis Palomino</h3>
-              <div class="persona-job">Gerente General · 52 años</div>
-              <p class="persona-quote">"Necesito ver el estado de las contrataciones críticas sin tener que pedir un reporte cada vez."</p>
+              <div class="persona-role-tag persona-role-tag--tertiary">Área especialista</div>
+              <h3 class="persona-name">Jorge Quispe</h3>
+              <div class="persona-job">Especialista de Calidad · 38 años</div>
+              <p class="persona-quote">"Solo quiero ver los reclamos que me corresponden a mí, con toda la información necesaria para resolverlos sin tener que pedirle más datos al RTC."</p>
               <div class="persona-details">
                 <div class="persona-detail-block">
                   <div class="persona-detail-title">Frustraciones</div>
                   <ul>
-                    <li>Solo se entera del avance en reuniones semanales</li>
-                    <li>No tiene datos concretos para tomar decisiones</li>
+                    <li>Recibe reclamos sin los adjuntos necesarios para resolver</li>
+                    <li>El Excel no diferencia urgencia ni tipo de reclamo</li>
+                    <li>No puede dejar comentarios ni historial de acciones</li>
                   </ul>
                 </div>
                 <div class="persona-detail-block">
                   <div class="persona-detail-title">Objetivos</div>
                   <ul>
-                    <li>Dashboard de KPIs de reclutamiento en tiempo real</li>
-                    <li>Alertas de vacantes críticas sin cubrir</li>
+                    <li>Ver solo reclamos de su área, ya filtrados</li>
+                    <li>Acceder a adjuntos directamente desde el reclamo</li>
+                    <li>Registrar la resolución con comentario y cierre</li>
                   </ul>
                 </div>
               </div>
@@ -319,66 +290,61 @@
     </div>
   </section>
 
-  <!-- ==========================================
-       03 — LA SOLUCIÓN
-  =========================================== -->
+  <!-- 03 — LA SOLUCIÓN -->
   <section class="case-section" id="solucion">
     <div class="container">
       <div class="case-section-inner">
 
         <div class="case-section-header reveal">
           <div class="tag">03 — La solución</div>
-          <h2>Una plataforma con tres vistas, un solo flujo.</h2>
+          <h2>Un punto de entrada único, seis vistas distintas según el rol.</h2>
         </div>
 
         <div class="case-text case-text--centered reveal reveal-delay-1">
-          <p>Diseñé un sistema modular con roles diferenciados: RRHH gestiona el proceso completo, supervisores solo ven lo que les corresponde aprobar, y gerencia accede a un dashboard de métricas en tiempo real. Todo en una sola interfaz con navegación simplificada.</p>
+          <p>Diseñé una plataforma donde el RTC registra el reclamo una sola vez — con adjuntos incluidos — y el sistema lo enruta automáticamente al área correspondiente según el tipo de reclamo. Cada área ve únicamente lo que le corresponde, con el contexto completo para resolverlo sin ir a buscar información adicional.</p>
         </div>
 
-        <!-- Features grid -->
         <div class="features-grid reveal reveal-delay-2">
           <div class="feature-item">
             <div class="feature-num">01</div>
-            <div class="feature-name">Pipeline de candidatos</div>
-            <div class="feature-desc">Vista kanban con etapas configurables: Postulado → En revisión → Entrevista → Aprobado → Contratado.</div>
+            <div class="feature-name">Registro unificado</div>
+            <div class="feature-desc">Un único formulario para el RTC que reemplaza los cuatro Excels. Permite adjuntar documentos (guías de remisión, fotos) directamente desde el registro.</div>
           </div>
           <div class="feature-item">
             <div class="feature-num">02</div>
-            <div class="feature-name">Perfil unificado</div>
-            <div class="feature-desc">Un solo registro por candidato con historial completo de postulaciones, evaluaciones y documentos.</div>
+            <div class="feature-name">Enrutamiento automático</div>
+            <div class="feature-desc">El sistema detecta el tipo de reclamo y lo asigna al área correcta: Calidad, Farmacovigilancia, Almacén o Marketing, sin intervención manual del RTC.</div>
           </div>
           <div class="feature-item">
             <div class="feature-num">03</div>
-            <div class="feature-name">Aprobación por rol</div>
-            <div class="feature-desc">Los supervisores reciben solo los candidatos que deben evaluar, con formulario simplificado de feedback.</div>
+            <div class="feature-name">Vista por rol</div>
+            <div class="feature-desc">Cada área ve solo sus reclamos. El especialista accede al caso completo: datos del proveedor, adjuntos, historial de acciones y campo de resolución.</div>
           </div>
           <div class="feature-item">
             <div class="feature-num">04</div>
-            <div class="feature-name">Dashboard gerencial</div>
-            <div class="feature-desc">Métricas clave: vacantes activas, tiempo promedio de cobertura, tasa de aprobación por área.</div>
+            <div class="feature-name">Trazabilidad completa</div>
+            <div class="feature-desc">Cada acción queda registrada con fecha, responsable y comentario. El supervisor comercial puede ver el estado en tiempo real sin preguntar a nadie.</div>
           </div>
         </div>
 
-        <!-- Mockup principal -->
         <div class="case-img-block reveal reveal-delay-3">
           <div class="img-placeholder img-placeholder--wide">
-            <img src="Images_projects/Reclutamiento_Confipetrol/pipeline de candidatos.png" alt="">
-          </div>
-          <p class="img-caption">Vista principal del pipeline de candidatos para el rol de Analista RRHH</p>
+            <img src="Images_projects/Reclamos_Biomont/Bandeja de entrada.png" alt="">
         </div>
-
+        <p class="img-caption">Bandeja de entrada filtrada por área</p>
+    </div>
         <div class="case-img-row">
           <div class="case-img-block reveal reveal-delay-1">
             <div class="img-placeholder img-placeholder--half">
-              <img src="Images_projects/Reclutamiento_Confipetrol/lista de postulantes.png" alt="">
+              <img src="Images_projects/Reclamos_Biomont/formulario de reclamo.png" alt="">
             </div>
-            <p class="img-caption">Perfil unificado del candidato con historial</p>
+            <p class="img-caption">Formulario de registro unificado para el RTC</p>
           </div>
           <div class="case-img-block reveal reveal-delay-2">
             <div class="img-placeholder img-placeholder--half">
-              <img src="Images_projects/Reclutamiento_Confipetrol/dashboard_reclutamiento.png" alt="">
+              <img src="Images_projects/Reclamos_Biomont/Métricas e indicadores - Dashboard - Almacén.png" alt="">
             </div>
-            <p class="img-caption">Vista de métricas para gerencia</p>
+            <p class="img-caption">Panel de control del supervisor comercial</p>
           </div>
         </div>
 
@@ -386,9 +352,7 @@
     </div>
   </section>
 
-  <!-- ==========================================
-       04 — DESIGN SYSTEM
-  =========================================== -->
+  <!-- 04 — DESIGN SYSTEM -->
   <section class="case-section case-section--alt" id="design-system">
     <div class="container">
       <div class="case-section-inner">
@@ -398,107 +362,106 @@
           <h2>Fundamentos visuales del sistema.</h2>
         </div>
 
-        <!-- Colores -->
         <div class="ds-block reveal reveal-delay-1">
           <div class="ds-block-title">Paleta de color</div>
           <div class="ds-colors">
             <div class="ds-color-item">
-              <div class="ds-color-swatch" style="background:#EE781E;"></div>
+              <div class="ds-color-swatch" style="background:#004FCD;"></div>
               <div class="ds-color-name">Primario</div>
-              <div class="ds-color-hex">#EE781E</div>
+              <div class="ds-color-hex">#0D3B6E</div>
             </div>
             <div class="ds-color-item">
-              <div class="ds-color-swatch" style="background:#1F4690;"></div>
-              <div class="ds-color-name">Secundario</div>
-              <div class="ds-color-hex">#1F4690</div>
-            </div>
-            <div class="ds-color-item">
-              <div class="ds-color-swatch" style="background:#155DFC;"></div>
+              <div class="ds-color-swatch" style="background:#E3202C;"></div>
               <div class="ds-color-name">Acento</div>
-              <div class="ds-color-hex">#155DFC</div>
+              <div class="ds-color-hex">#F97316</div>
             </div>
             <div class="ds-color-item">
-              <div class="ds-color-swatch" style="background:#009966;"></div>
-              <div class="ds-color-name">Alerta</div>
-              <div class="ds-color-hex">#009966</div>
+              <div class="ds-color-swatch" style="background:#16A34A;"></div>
+              <div class="ds-color-name">Resuelto</div>
+              <div class="ds-color-hex">#16A34A</div>
+            </div>
+            <div class="ds-color-item">
+              <div class="ds-color-swatch" style="background:#EAB308;"></div>
+              <div class="ds-color-name">En proceso</div>
+              <div class="ds-color-hex">#EAB308</div>
             </div>
             <div class="ds-color-item">
               <div class="ds-color-swatch" style="background:#DC2626;"></div>
-              <div class="ds-color-name">Error</div>
+              <div class="ds-color-name">Vencido</div>
               <div class="ds-color-hex">#DC2626</div>
             </div>
             <div class="ds-color-item">
-              <div class="ds-color-swatch" style="background:#F9FAFB; border: 1px solid #818181;"></div>
+              <div class="ds-color-swatch" style="background:#F8FAFC; border:1px solid #CBD5E1;"></div>
               <div class="ds-color-name">Fondo</div>
-              <div class="ds-color-hex">#F9FAFB</div>
+              <div class="ds-color-hex">#F8FAFC</div>
             </div>
             <div class="ds-color-item">
-              <div class="ds-color-swatch" style="background:#101828;"></div>
+              <div class="ds-color-swatch" style="background:#1E1E1E;"></div>
               <div class="ds-color-name">Texto</div>
-              <div class="ds-color-hex">#101828</div>
+              <div class="ds-color-hex">#1E293B</div>
             </div>
             <div class="ds-color-item">
-              <div class="ds-color-swatch" style="background:#6A7282;"></div>
-              <div class="ds-color-name">Secundario</div>
-              <div class="ds-color-hex">#64748B</div>
+              <div class="ds-color-swatch" style="background:#94A3B8;"></div>
+              <div class="ds-color-name">Muted</div>
+              <div class="ds-color-hex">#94A3B8</div>
             </div>
           </div>
         </div>
 
-        <!-- Tipografía -->
         <div class="ds-block reveal reveal-delay-2">
           <div class="ds-block-title">Tipografía</div>
           <div class="ds-typography">
             <div class="ds-type-item">
-              <div class="ds-type-sample ds-type-h1">Heading 1</div>
-              <div class="ds-type-meta">Raleway · 32px · 700 · −0.02em</div>
+              <div class="ds-type-sample ds-type-h1">Heading 1 — Título de sección</div>
+              <div class="ds-type-meta">Inter · 28px · 700 · −0.02em</div>
             </div>
             <div class="ds-type-item">
-              <div class="ds-type-sample ds-type-h2">Heading 2</div>
-              <div class="ds-type-meta">Raleway · 24px · 600 · −0.01em</div>
+              <div class="ds-type-sample ds-type-h2">Heading 2 — Nombre del reclamo</div>
+              <div class="ds-type-meta">Inter · 20px · 600 · −0.01em</div>
             </div>
             <div class="ds-type-item">
-              <div class="ds-type-sample ds-type-body">Body — El sistema permite gestionar candidatos de forma centralizada.</div>
+              <div class="ds-type-sample ds-type-body">Body — El proveedor reporta que el producto llegó sin la cadena de frío requerida según la guía de remisión adjunta.</div>
               <div class="ds-type-meta">Inter · 14px · 400 · 1.6 line-height</div>
             </div>
             <div class="ds-type-item">
-              <div class="ds-type-sample ds-type-label">ETIQUETA / LABEL</div>
-              <div class="ds-type-meta">Inter · 11px · 500 · 0.08em tracking</div>
+              <div class="ds-type-sample ds-type-label">TIPO DE RECLAMO / ÁREA</div>
+              <div class="ds-type-meta">Inter · 11px · 600 · 0.08em tracking</div>
             </div>
           </div>
         </div>
 
-        <!-- Componentes -->
         <div class="ds-block reveal reveal-delay-3">
           <div class="ds-block-title">Componentes clave</div>
           <div class="ds-components">
 
             <div class="ds-component-group">
-              <div class="ds-component-label">Botones</div>
+              <div class="ds-component-label">Estados del reclamo</div>
               <div class="ds-component-row">
-                <div class="ds-btn ds-btn--primary-rec">APROBAR CANDIDATO</div>
-                <div class="ds-btn ds-btn--secondary-rec">VER PERFIL</div>
-                <div class="ds-btn ds-btn--danger-rec">RECHAZAR</div>
-                <div class="ds-btn ds-btn--ghost-rec">CANCELAR</div>
+                <div class="ds-badge ds-badge--blue">Nuevo</div>
+                <div class="ds-badge ds-badge--yellow">En proceso</div>
+                <div class="ds-badge ds-badge--purple">Pendiente área</div>
+                <div class="ds-badge ds-badge--green">Resuelto</div>
+                <div class="ds-badge ds-badge--red">Vencido</div>
               </div>
             </div>
 
             <div class="ds-component-group">
-              <div class="ds-component-label">Estados del candidato</div>
+              <div class="ds-component-label">Área destino</div>
               <div class="ds-component-row">
-                <div class="ds-badge ds-badge--blue">Postulado</div>
-                <div class="ds-badge ds-badge--yellow">En revisión</div>
-                <div class="ds-badge ds-badge--purple">Entrevista</div>
-                <div class="ds-badge ds-badge--green">Aprobado</div>
-                <div class="ds-badge ds-badge--red">Rechazado</div>
+                <div class="ds-badge" style="background:rgba(13,59,110,0.12);color:#0D3B6E;border:1px solid rgba(13,59,110,0.25);">Calidad</div>
+                <div class="ds-badge" style="background:rgba(249,115,22,0.12);color:#c2440a;border:1px solid rgba(249,115,22,0.3);">Farmacovigilancia</div>
+                <div class="ds-badge" style="background:rgba(234,179,8,0.12);color:#854d0e;border:1px solid rgba(234,179,8,0.3);">Almacén</div>
+                <div class="ds-badge" style="background:rgba(22,163,74,0.12);color:#14532d;border:1px solid rgba(22,163,74,0.3);">Marketing</div>
               </div>
             </div>
 
             <div class="ds-component-group">
-              <div class="ds-component-label">Input de búsqueda</div>
-              <div class="ds-input-wrapper">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="4.5" stroke="#64748B" stroke-width="1.5"/><path d="M10.5 10.5L13 13" stroke="#64748B" stroke-width="1.5" stroke-linecap="round"/></svg>
-                <span class="ds-input-placeholder">BUSCAR POR NOMBRE, PUESTO O ÁREA...</span>
+              <div class="ds-component-label">Acciones principales</div>
+              <div class="ds-component-row">
+                <div class="ds-btn ds-btn--primary-recl">Registrar reclamo</div>
+                <div class="ds-btn ds-btn--secondary-recl">Ver detalle</div>
+                <div class="ds-btn ds-btn--ghost-recl">Adjuntar documento</div>
+                <div class="ds-btn ds-btn--danger-recl">Marcar como vencido</div>
               </div>
             </div>
 
@@ -509,69 +472,67 @@
     </div>
   </section>
 
-  <!-- ==========================================
-       05 — USER FLOW
-  =========================================== -->
+  <!-- 05 — USER FLOW -->
   <section class="case-section" id="user-flow">
     <div class="container">
       <div class="case-section-inner">
 
         <div class="case-section-header reveal">
           <div class="tag">05 — User flow</div>
-          <h2>El flujo del proceso de selección de punta a punta.</h2>
+          <h2>Del reclamo recibido en campo al cierre documentado en el sistema.</h2>
         </div>
 
         <div class="case-text reveal reveal-delay-1">
-          <p>Mapeé el flujo completo desde que RRHH crea una convocatoria hasta que el candidato es contratado, incluyendo los puntos de decisión de cada rol involucrado.</p>
+          <p>El flujo cubre el recorrido completo desde que el RTC recibe un reclamo de un proveedor — en cualquiera de los cuatro canales — hasta que el área especialista lo resuelve y el supervisor puede verificar el cierre.</p>
         </div>
 
-        <!-- User flow como imagen -->
         <div class="case-img-block reveal reveal-delay-2">
-         <img src="Images_projects/Reclutamiento_Confipetrol/user_flow.jpg" 
-         alt="User flow sistema de reclutamiento Confipetrol" 
-         class="project-hero-img">
-          <p class="img-caption">Flujo completo: desde la creación de convocatoria hasta la contratación del candidato</p>
+          <div class="img-placeholder img-placeholder--flow">
+            <img src="Images_projects/Reclamos_Biomont/user_flow_reclamos.jpg"
+            alt="User flow sistema de reclamos Biomont"
+            class="project-hero-img">
+          </div>
+          <p class="img-caption">Flujo completo por carriles: RTC → Sistema → Área especialista → Supervisor</p>
         </div>
 
-        <!-- Etapas del flujo en texto como complemento -->
         <div class="flow-steps reveal reveal-delay-3">
           <div class="flow-step">
             <div class="flow-step-num">1</div>
             <div class="flow-step-content">
-              <div class="flow-step-title">Creación de convocatoria</div>
-              <div class="flow-step-desc">RRHH define el puesto, requisitos, área solicitante y fecha límite.</div>
+              <div class="flow-step-title">RTC recibe el reclamo</div>
+              <div class="flow-step-desc">El proveedor contacta al RTC por WhatsApp, email, visita o llamada. El RTC accede a la plataforma desde cualquier dispositivo.</div>
             </div>
           </div>
           <div class="flow-connector"></div>
           <div class="flow-step">
             <div class="flow-step-num">2</div>
             <div class="flow-step-content">
-              <div class="flow-step-title">Recepción de postulaciones</div>
-              <div class="flow-step-desc">Los candidatos ingresan al sistema y son asignados automáticamente a la convocatoria.</div>
+              <div class="flow-step-title">RTC completa el formulario único</div>
+              <div class="flow-step-desc">Ingresa datos del proveedor, tipo de reclamo, descripción y adjunta documentos (guías de remisión, fotos). Todo en una sola pantalla.</div>
             </div>
           </div>
           <div class="flow-connector"></div>
           <div class="flow-step">
             <div class="flow-step-num">3</div>
             <div class="flow-step-content">
-              <div class="flow-step-title">Filtro inicial por RRHH</div>
-              <div class="flow-step-desc">Revisión de requisitos mínimos. Los candidatos pasan a "En revisión" o son descartados.</div>
+              <div class="flow-step-title">Sistema enruta automáticamente</div>
+              <div class="flow-step-desc">Según el tipo de reclamo, el sistema lo asigna a Calidad, Farmacovigilancia, Almacén o Marketing. El área recibe notificación inmediata.</div>
             </div>
           </div>
           <div class="flow-connector"></div>
           <div class="flow-step">
             <div class="flow-step-num">4</div>
             <div class="flow-step-content">
-              <div class="flow-step-title">Evaluación del supervisor</div>
-              <div class="flow-step-desc">El supervisor del área revisa los perfiles pre-filtrados y da su aprobación con comentarios.</div>
+              <div class="flow-step-title">Área especialista revisa y actúa</div>
+              <div class="flow-step-desc">El especialista ve solo sus reclamos con toda la información necesaria. Puede solicitar información adicional, escalar o resolver directamente.</div>
             </div>
           </div>
           <div class="flow-connector"></div>
           <div class="flow-step">
             <div class="flow-step-num">5</div>
             <div class="flow-step-content">
-              <div class="flow-step-title">Entrevista y decisión final</div>
-              <div class="flow-step-desc">RRHH programa la entrevista, registra el resultado y genera la oferta de contratación.</div>
+              <div class="flow-step-title">Cierre y notificación</div>
+              <div class="flow-step-desc">El especialista registra la resolución con comentario. El sistema notifica al RTC y actualiza el estado. El supervisor ve el cierre en su dashboard.</div>
             </div>
           </div>
         </div>
@@ -580,38 +541,36 @@
     </div>
   </section>
 
-  <!-- ==========================================
-       RESULTADOS
-  =========================================== -->
+  <!-- RESULTADOS -->
   <section class="case-section case-section--alt" id="resultados">
     <div class="container">
       <div class="case-section-inner">
 
         <div class="case-section-header reveal">
           <div class="tag">Resultados</div>
-          <h2>Impacto medible en el proceso de contratación.</h2>
+          <h2>De 20 minutos por reclamo a un proceso estandarizado y trazable.</h2>
         </div>
 
         <div class="results-grid">
           <div class="result-item reveal reveal-delay-1">
-            <div class="result-num">−60%</div>
-            <div class="result-label">Tiempo de contratación</div>
-            <div class="result-desc">De 3 semanas a menos de 8 días promedio para cubrir una vacante.</div>
+            <div class="result-num">−75%</div>
+            <div class="result-label">Tiempo de registro</div>
+            <div class="result-desc">De más de 20 minutos a menos de 5 minutos por reclamo registrado.</div>
           </div>
           <div class="result-item reveal reveal-delay-2">
-            <div class="result-num">100%</div>
-            <div class="result-label">Trazabilidad</div>
-            <div class="result-desc">Cada acción queda registrada con fecha, responsable y comentario.</div>
+            <div class="result-num">4→1</div>
+            <div class="result-label">Sistema unificado</div>
+            <div class="result-desc">Cuatro Excels paralelos reemplazados por una única plataforma con fuente de verdad compartida.</div>
           </div>
           <div class="result-item reveal reveal-delay-3">
-            <div class="result-num">3→1</div>
-            <div class="result-label">Fuente de verdad</div>
-            <div class="result-desc">Se eliminaron los archivos paralelos; toda la información vive en un solo sistema.</div>
+            <div class="result-num">100%</div>
+            <div class="result-label">Adjuntos integrados</div>
+            <div class="result-desc">Documentos y fotos adjuntados directamente en el registro, sin coordinación externa por WhatsApp o email.</div>
           </div>
           <div class="result-item reveal reveal-delay-4">
-            <div class="result-num">94%</div>
-            <div class="result-label">Satisfacción del equipo</div>
-            <div class="result-desc">Medido en encuesta post-lanzamiento con el equipo de RRHH y supervisores.</div>
+            <div class="result-num">6</div>
+            <div class="result-label">Roles diseñados</div>
+            <div class="result-desc">RTC, Supervisor Comercial, Calidad, Farmacovigilancia, Almacén, Marketing y Administrador TI con vistas diferenciadas.</div>
           </div>
         </div>
 
@@ -619,17 +578,15 @@
     </div>
   </section>
 
-  <!-- ==========================================
-       NAVEGACIÓN ENTRE PROYECTOS
-  =========================================== -->
+  <!-- NAVEGACIÓN ENTRE PROYECTOS -->
   <section class="project-nav-section">
     <div class="container">
       <div class="project-nav-inner">
-        <a href="index.html#projects" class="project-nav-back">
+        <a href="project-reclutamiento.html" class="project-nav-back">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7.5 3.5L3 8l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Todos los proyectos
+          Proyecto anterior
         </a>
-        <a href="project-reclamos.html" class="project-nav-next">
+        <a href="project-caylet.html" class="project-nav-next">
           Siguiente proyecto
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M8.5 3.5L13 8l-4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
