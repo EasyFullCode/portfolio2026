@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grupo Aire — Portal de Partners — André Pillihuaman</title>
+  <meta name="description" content="Caso de estudio: Portal centralizado para partners de Grupo Aire con CMS propio, documentación, cursos y wikis." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="images/favicon.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/project.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>:root { --ds-font-display: 'Montserrat', sans-serif; --ds-font-body: 'Montserrat', sans-serif; }</style>
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">André<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">Sobre mí</a></li>
+      <li><a href="index.html#services">Servicios</a></li>
+      <li><a href="index.html#projects">Proyectos</a></li>
+      <li><a href="index.html#testimonials">Testimonios</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="index.html#contact" class="nav-cta"><span class="dot"></span>Hablemos</a>
+      <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html#about"        class="mobile-menu-link">Sobre mí</a></li>
+      <li><a href="index.html#services"     class="mobile-menu-link">Servicios</a></li>
+      <li><a href="index.html#projects"     class="mobile-menu-link">Proyectos</a></li>
+      <li><a href="index.html#testimonials" class="mobile-menu-link">Testimonios</a></li>
+      <li><a href="index.html#contact"      class="mobile-menu-link">Hablemos</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="project-hero">
+    <div class="container">
+      <a href="index.html#projects" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7.5 3.5L3 8l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver a proyectos
+      </a>
+      <div class="project-hero-cats">
+        <span class="project-cat-hero">Telecomunicaciones</span>
+        <span class="project-cat-hero">UX/UI</span>
+        <span class="project-cat-hero">CMS propio</span>
+      </div>
+      <h1 class="project-hero-title">Portal de partners con CMS propio para empresa de telecomunicaciones española</h1>
+      <p class="project-hero-desc">Diseño de un portal centralizado para los distribuidores de Grupo Aire (España) que unificó documentación, cursos, wikis y recursos dispersos en múltiples sistemas — con su propio CMS para gestión autónoma del contenido.</p>
+      <div class="project-meta">
+        <div class="project-meta-item">
+          <span class="meta-label">Rol</span>
+          <span class="meta-value">UX/UI Designer</span>
+        </div>
+        <div class="project-meta-item">
+          <span class="meta-label">Alcance</span>
+          <span class="meta-value">Portal + CMS propio</span>
+        </div>
+        <div class="project-meta-item">
+          <span class="meta-label">Herramientas</span>
+          <span class="meta-value">Figma</span>
+        </div>
+        <div class="project-meta-item">
+          <span class="meta-label">Sector</span>
+          <span class="meta-value">Telecomunicaciones · España</span>
+        </div>
+      </div>
+    </div>
+    <!--<div class="project-hero-img-wrapper">
+      <img src="images/project_grupoaire.webp" alt="Portal de partners Grupo Aire" class="project-hero-img" />
+      <div class="hero-mockup-fade"></div>
+    </div>-->
+  </section>
+
+  <!-- 01 — EL PROBLEMA -->
+  <section class="case-section" id="problema">
+    <div class="container">
+      <div class="case-section-inner">
+        <div class="case-section-header reveal">
+          <div class="tag">01 — El problema</div>
+          <h2>Los partners de Grupo Aire buscaban información en cuatro sistemas distintos sin encontrarla.</h2>
+        </div>
+        <div class="case-two-col">
+          <div class="case-text reveal reveal-delay-1">
+            <p>Grupo Aire tiene una red de partners distribuida en España, organizados en diferentes niveles según su volumen de distribución. Cada partner necesitaba acceder a documentación técnica, materiales de formación, wikis de producto, guías de venta y recursos operativos para hacer su trabajo.</p>
+            <p>El problema era que toda esta información estaba dispersa en múltiples plataformas sin conexión entre sí: un sistema para cursos, otro para documentos, otro para comunicados, otro para soporte. Los partners perdían tiempo buscando, encontraban versiones desactualizadas y Grupo Aire no tenía forma de asegurarse de que la información correcta llegara al nivel de partner correcto.</p>
+          </div>
+          <div class="pain-points reveal reveal-delay-2">
+            <div class="pain-point">
+              <div class="pain-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L2 17h16L10 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 8v4M10 14.5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+              <div>
+                <div class="pain-title">Información fragmentada</div>
+                <div class="pain-desc">Documentación, cursos y wikis en plataformas distintas sin centralización ni búsqueda unificada.</div>
+              </div>
+            </div>
+            <div class="pain-point">
+              <div class="pain-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L2 17h16L10 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 8v4M10 14.5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+              <div>
+                <div class="pain-title">Sin segmentación por nivel</div>
+                <div class="pain-desc">No había forma de mostrar contenido diferente según el nivel del partner (básico, avanzado, premium).</div>
+              </div>
+            </div>
+            <div class="pain-point">
+              <div class="pain-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L2 17h16L10 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 8v4M10 14.5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+              <div>
+                <div class="pain-title">Dependencia técnica para actualizar</div>
+                <div class="pain-desc">Cualquier cambio de contenido requería intervención de desarrollo, ralentizando la comunicación.</div>
+              </div>
+            </div>
+            <div class="pain-point">
+              <div class="pain-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L2 17h16L10 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 8v4M10 14.5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+              <div>
+                <div class="pain-title">Sin métricas de uso</div>
+                <div class="pain-desc">Grupo Aire no sabía qué recursos consultaban más sus partners ni quién completaba la formación.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="problem-stats reveal reveal-delay-3">
+          <div class="problem-stat"><div class="problem-stat-num">4+</div><div class="problem-stat-label">Sistemas sin conexión</div></div>
+          <div class="problem-stat"><div class="problem-stat-num">Dispersa</div><div class="problem-stat-label">Segmentación por nivel</div></div>
+          <div class="problem-stat"><div class="problem-stat-num">Externo</div><div class="problem-stat-label">Autonomía de contenido</div></div>
+          <div class="problem-stat"><div class="problem-stat-num">Ninguna</div><div class="problem-stat-label">Trazabilidad de uso</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 — USER PERSONA -->
+  <section class="case-section case-section--alt" id="persona">
+    <div class="container">
+      <div class="case-section-inner">
+        <div class="case-section-header reveal">
+          <div class="tag">02 — User persona</div>
+          <h2>El partner que vende y el equipo que gestiona todo el contenido.</h2>
+        </div>
+        <div class="personas-grid">
+          <div class="persona-card reveal reveal-delay-1">
+            <div class="persona-avatar"><img src="Images_projects/Grupo Aire/partner avanzado.png" alt=""></div>
+            <div class="persona-info">
+              <div class="persona-role-tag">Partner distribuidor</div>
+              <h3 class="persona-name">Javier Moreno</h3>
+              <div class="persona-job">Partner nivel avanzado · 41 años · Madrid</div>
+              <p class="persona-quote">"Cuando tengo que responder una duda técnica de un cliente, me paso media hora buscando el documento correcto entre correos y plataformas distintas."</p>
+              <div class="persona-details">
+                <div class="persona-detail-block">
+                  <div class="persona-detail-title">Frustraciones</div>
+                  <ul>
+                    <li>Pierde tiempo buscando documentación actualizada</li>
+                    <li>Recibe cursos de formación por email sin seguimiento</li>
+                    <li>No sabe qué recursos tiene disponibles según su nivel</li>
+                    <li>Encuentra versiones antiguas de tarifas y productos</li>
+                  </ul>
+                </div>
+                <div class="persona-detail-block">
+                  <div class="persona-detail-title">Objetivos</div>
+                  <ul>
+                    <li>Acceder a toda la información desde un solo lugar</li>
+                    <li>Ver los recursos que le corresponden por nivel</li>
+                    <li>Completar formaciones con seguimiento de progreso</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="persona-card reveal reveal-delay-2">
+            <div class="persona-avatar"><img src="Images_projects/Grupo Aire/partner básico.png" alt=""></div>
+            <div class="persona-info">
+              <div class="persona-role-tag persona-role-tag--secondary">Partner básico</div>
+              <h3 class="persona-name">Laura García</h3>
+              <div class="persona-job">Partner nivel básico · 29 años · Barcelona</div>
+              <p class="persona-quote">"Soy nueva como partner y no sé bien por dónde empezar. Necesito una guía clara de qué tengo que aprender primero."</p>
+              <div class="persona-details">
+                <div class="persona-detail-block">
+                  <div class="persona-detail-title">Frustraciones</div>
+                  <ul>
+                    <li>No hay un onboarding estructurado para nuevos partners</li>
+                    <li>Recibe demasiada información sin orden de prioridad</li>
+                  </ul>
+                </div>
+                <div class="persona-detail-block">
+                  <div class="persona-detail-title">Objetivos</div>
+                  <ul>
+                    <li>Ruta de aprendizaje clara para empezar a vender</li>
+                    <li>Acceso a soporte y wikis de forma inmediata</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="persona-card reveal reveal-delay-3">
+            <div class="persona-avatar"><img src="Images_projects/Grupo Aire/admin.png" alt=""></div>
+            <div class="persona-info">
+              <div class="persona-role-tag persona-role-tag--tertiary">Gestor de contenido</div>
+              <h3 class="persona-name">Carlos Méndez</h3>
+              <div class="persona-job">Responsable de canal · 46 años · Valencia</div>
+              <p class="persona-quote">"Necesito poder actualizar una tarifa o publicar un nuevo curso sin tener que esperar al equipo técnico. El contenido cambia constantemente."</p>
+              <div class="persona-details">
+                <div class="persona-detail-block">
+                  <div class="persona-detail-title">Frustraciones</div>
+                  <ul>
+                    <li>Cualquier cambio requiere un ticket al equipo de desarrollo</li>
+                    <li>No puede segmentar qué ve cada nivel de partner</li>
+                  </ul>
+                </div>
+                <div class="persona-detail-block">
+                  <div class="persona-detail-title">Objetivos</div>
+                  <ul>
+                    <li>CMS intuitivo para gestionar todo el contenido del portal</li>
+                    <li>Control sobre permisos por nivel de partner</li>
+                    <li>Métricas de qué contenido se consume más</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 — LA SOLUCIÓN -->
+  <section class="case-section" id="solucion">
+    <div class="container">
+      <div class="case-section-inner">
+        <div class="case-section-header reveal">
+          <div class="tag">03 — La solución</div>
+          <h2>Un portal que funciona como sitio web completo, con CMS propio para control total del contenido.</h2>
+        </div>
+        <div class="case-text case-text--centered reveal reveal-delay-1">
+          <p>Diseñé un portal que actúa como la fuente única de verdad para todos los partners de Grupo Aire. Cada nivel de partner ve el contenido que le corresponde. El equipo de Grupo Aire gestiona todo desde su propio CMS — sin depender de desarrollo para ningún cambio de contenido.</p>
+        </div>
+        <div class="features-grid reveal reveal-delay-2">
+          <div class="feature-item">
+            <div class="feature-num">01</div>
+            <div class="feature-name">Portal unificado por niveles</div>
+            <div class="feature-desc">Un solo punto de acceso para todos los partners, con vistas diferenciadas según el nivel. Cada partner ve exactamente lo que le corresponde.</div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">02</div>
+            <div class="feature-name">Centro de documentación y wikis</div>
+            <div class="feature-desc">Documentación técnica, tarifas, guías de producto y wikis organizados con búsqueda unificada y filtros por categoría y nivel.</div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">03</div>
+            <div class="feature-name">Módulo de formación con progreso</div>
+            <div class="feature-desc">Cursos estructurados con seguimiento de progreso por partner. El equipo de Grupo Aire puede ver quién completó qué formación.</div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">04</div>
+            <div class="feature-name">CMS propio para gestión autónoma</div>
+            <div class="feature-desc">Panel de administración diseñado a medida para que el equipo de Grupo Aire gestione todo el contenido del portal sin intervención técnica.</div>
+          </div>
+        </div>
+
+        <div class="case-img-block reveal reveal-delay-3">
+          <div class="img-placeholder img-placeholder--wide">
+            <img src="Images_projects/Grupo Aire/cursos (1).webp" alt="">
+          </div>
+          <p class="img-caption">Vista principal del portal para partner nivel avanzado con acceso a documentación y cursos</p>
+        </div>
+        <div class="case-img-row">
+          <div class="case-img-block reveal reveal-delay-1">
+            <div class="img-placeholder img-placeholder--half">
+              <img src="Images_projects/Grupo Aire/mockup_vista_principal (1).webp" alt="">
+            </div>
+            <p class="img-caption">Biblioteca de documentación con búsqueda y filtros</p>
+          </div>
+          <div class="case-img-block reveal reveal-delay-2">
+            <div class="img-placeholder img-placeholder--half">
+              <img src="Images_projects/Grupo Aire/admin_aire.png" alt="">
+            </div>
+            <p class="img-caption">CMS propio para gestión autónoma de contenido y permisos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 — DESIGN SYSTEM -->
+  <section class="case-section case-section--alt" id="design-system">
+    <div class="container">
+      <div class="case-section-inner">
+        <div class="case-section-header reveal">
+          <div class="tag">04 — Design system</div>
+          <h2>Identidad corporativa adaptada a una plataforma de conocimiento.</h2>
+        </div>
+        <div class="ds-block reveal reveal-delay-1">
+          <div class="ds-block-title">Paleta de color</div>
+          <div class="ds-colors">
+            <div class="ds-color-item"><div class="ds-color-swatch" style="background:#000A56;"></div><div class="ds-color-name">Primario</div><div class="ds-color-hex">#000A56</div></div>
+            <div class="ds-color-item"><div class="ds-color-swatch" style="background:#9F0BFF;"></div><div class="ds-color-name">Acción</div><div class="ds-color-hex">#9F0BFF</div></div>
+            <div class="ds-color-item"><div class="ds-color-swatch" style="background:#FF66FF;"></div><div class="ds-color-name">Acento</div><div class="ds-color-hex">#FF66FF</div></div>
+            <div class="ds-color-item"><div class="ds-color-swatch" style="background:#16A34A;"></div><div class="ds-color-name">Completado</div><div class="ds-color-hex">#16A34A</div></div>
+            <div class="ds-color-item"><div class="ds-color-swatch" style="background:#F59E0B;"></div><div class="ds-color-name">En progreso</div><div class="ds-color-hex">#F59E0B</div></div>
+            <div class="ds-color-item"><div class="ds-color-swatch" style="background:#D4AF37;"></div><div class="ds-color-name">Premium</div><div class="ds-color-hex">#D4AF37</div></div>
+            <div class="ds-color-item"><div class="ds-color-swatch" style="background:#F8FAFC; border:1px solid #CBD5E1;"></div><div class="ds-color-name">Fondo</div><div class="ds-color-hex">#F8FAFC</div></div>
+            <div class="ds-color-item"><div class="ds-color-swatch" style="background:#1E293B;"></div><div class="ds-color-name">Texto</div><div class="ds-color-hex">#1E293B</div></div>
+          </div>
+        </div>
+        <div class="ds-block reveal reveal-delay-2">
+          <div class="ds-block-title">Tipografía</div>
+          <div class="ds-typography">
+            <div class="ds-type-item"><div class="ds-type-sample ds-type-h1">Heading — Centro de recursos para partners</div><div class="ds-type-meta">Inter · 28px · 700 · −0.02em</div></div>
+            <div class="ds-type-item"><div class="ds-type-sample ds-type-h2">Subheading — Documentación técnica</div><div class="ds-type-meta">Inter · 20px · 600</div></div>
+            <div class="ds-type-item"><div class="ds-type-sample ds-type-body">Body — Guía de configuración para el servicio de fibra óptica residencial, actualizada en enero de 2025.</div><div class="ds-type-meta">Inter · 14px · 400 · 1.65 line-height</div></div>
+            <div class="ds-type-item"><div class="ds-type-sample ds-type-label">NIVEL PARTNER / CATEGORÍA</div><div class="ds-type-meta">Inter · 11px · 600 · 0.08em tracking</div></div>
+          </div>
+        </div>
+        <div class="ds-block reveal reveal-delay-3">
+          <div class="ds-block-title">Componentes clave</div>
+          <div class="ds-components">
+            <div class="ds-component-group">
+              <div class="ds-component-label">Niveles de partner</div>
+              <div class="ds-component-row">
+                <div class="ds-badge ds-badge--blue">Básico</div>
+                <div class="ds-badge ds-badge--yellow">Avanzado</div>
+                <div class="ds-badge" style="background:rgba(124,58,237,0.15);color:#a78bfa;border:1px solid rgba(124,58,237,0.3);">Premium</div>
+              </div>
+            </div>
+            <div class="ds-component-group">
+              <div class="ds-component-label">Estado de formación</div>
+              <div class="ds-component-row">
+                <div class="ds-badge" style="background:rgba(100,116,139,0.1);color:#94a3b8;border:1px solid rgba(100,116,139,0.2);">Sin iniciar</div>
+                <div class="ds-badge ds-badge--yellow">En progreso</div>
+                <div class="ds-badge ds-badge--green">Completado</div>
+              </div>
+            </div>
+            <div class="ds-component-group">
+              <div class="ds-component-label">Tipos de recurso</div>
+              <div class="ds-component-row">
+                <div class="ds-badge" style="background:rgba(0,87,217,0.1);color:#60a5fa;border:1px solid rgba(0,87,217,0.25);">Documentación</div>
+                <div class="ds-badge" style="background:rgba(0,180,216,0.1);color:#22d3ee;border:1px solid rgba(0,180,216,0.25);">Curso</div>
+                <div class="ds-badge" style="background:rgba(124,58,237,0.1);color:#a78bfa;border:1px solid rgba(124,58,237,0.25);">Wiki</div>
+                <div class="ds-badge" style="background:rgba(22,163,74,0.1);color:#4ade80;border:1px solid rgba(22,163,74,0.25);">Guía de ventas</div>
+              </div>
+            </div>
+            <div class="ds-component-group">
+              <div class="ds-component-label">Acciones principales</div>
+              <div class="ds-component-row">
+                <div class="ds-btn" style="background:#9F0BFF;color:#fff;">Ver recurso</div>
+                <div class="ds-btn" style="background:#9F0BFF;color:#fff;">Continuar curso</div>
+                <div class="ds-btn" style="background:transparent;color:#9F0BFF;border:1px solid #9F0BFF;">Descargar</div>
+                <div class="ds-btn" style="background:transparent;color:var(--text-muted);border:1px solid var(--border);">Buscar</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 — USER FLOW -->
+  <section class="case-section" id="user-flow">
+    <div class="container">
+      <div class="case-section-inner">
+        <div class="case-section-header reveal">
+          <div class="tag">05 — User flow</div>
+          <h2>Del acceso al portal hasta la formación completada y el recurso encontrado.</h2>
+        </div>
+        <div class="case-text reveal reveal-delay-1">
+          <p>El flujo cubre dos recorridos clave: el partner que accede al portal a buscar un recurso específico y el partner que sigue una ruta de formación. Ambos conviven en la misma plataforma con navegación diferenciada según el nivel.</p>
+        </div>
+        <div class="case-img-block reveal reveal-delay-2">
+          <div class="img-placeholder img-placeholder--flow">
+            <img src="Images_projects/Grupo Aire/Flujo Aire.jpg" alt="">
+          </div>
+          <p class="img-caption">Flujo del partner: acceso → dashboard personalizado → recurso / formación → completado</p>
+        </div>
+        <div class="flow-steps reveal reveal-delay-3">
+          <div class="flow-step">
+            <div class="flow-step-num">1</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Acceso y autenticación</div>
+              <div class="flow-step-desc">El partner inicia sesión con sus credenciales. El sistema detecta su nivel (básico, avanzado, premium) y carga la vista correspondiente.</div>
+            </div>
+          </div>
+          <div class="flow-connector"></div>
+          <div class="flow-step">
+            <div class="flow-step-num">2</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Dashboard personalizado</div>
+              <div class="flow-step-desc">Ve su progreso de formación, los últimos recursos publicados para su nivel, novedades de Grupo Aire y accesos directos a las secciones más usadas.</div>
+            </div>
+          </div>
+          <div class="flow-connector"></div>
+          <div class="flow-step">
+            <div class="flow-step-num">3</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Navega o busca el recurso</div>
+              <div class="flow-step-desc">Usa el buscador unificado o explora por sección (Documentación, Cursos, Wiki, Guías). Solo ve el contenido habilitado para su nivel.</div>
+            </div>
+          </div>
+          <div class="flow-connector"></div>
+          <div class="flow-step">
+            <div class="flow-step-num">4</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Consulta o completa la formación</div>
+              <div class="flow-step-desc">Accede al documento o inicia el curso. El progreso se registra automáticamente. Puede descargar recursos o marcar como completado.</div>
+            </div>
+          </div>
+          <div class="flow-connector"></div>
+          <div class="flow-step">
+            <div class="flow-step-num">5</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Grupo Aire gestiona desde el CMS</div>
+              <div class="flow-step-desc">El equipo publica nuevos recursos, actualiza contenido, configura permisos por nivel y revisa métricas de uso — todo desde el CMS propio sin tocar código.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTADOS -->
+  <section class="case-section case-section--alt" id="resultados">
+    <div class="container">
+      <div class="case-section-inner">
+        <div class="case-section-header reveal">
+          <div class="tag">Resultados</div>
+          <h2>De cuatro sistemas dispersos a una sola fuente de verdad.</h2>
+        </div>
+        <div class="results-grid">
+          <div class="result-item reveal reveal-delay-1"><div class="result-num">4→1</div><div class="result-label">Sistemas unificados</div><div class="result-desc">Documentación, cursos, wikis y guías centralizados en un único portal accesible para todos los partners.</div></div>
+          <div class="result-item reveal reveal-delay-2"><div class="result-num">0 devs</div><div class="result-label">Para actualizar contenido</div><div class="result-desc">El equipo de Grupo Aire gestiona todo el portal desde el CMS propio de forma completamente autónoma.</div></div>
+          <div class="result-item reveal reveal-delay-3"><div class="result-num">3 niveles</div><div class="result-label">Segmentación de contenido</div><div class="result-desc">Cada partner ve exactamente el contenido que le corresponde según su nivel de distribución.</div></div>
+          <div class="result-item reveal reveal-delay-4"><div class="result-num">100%</div><div class="result-label">Trazabilidad de formación</div><div class="result-desc">Grupo Aire sabe qué partners completaron qué formaciones y qué recursos se consultan más.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-nav-section">
+    <div class="container">
+      <div class="project-nav-inner">
+        <a href="project-brasper.html" class="project-nav-back">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7.5 3.5L3 8l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Proyecto anterior
+        </a>
+        <a href="index.html#projects" class="project-nav-next">
+          Ver todos los proyectos
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M8.5 3.5L13 8l-4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-copy">© 2026 Diseñado y desarrollado por <span>André Pillihuaman</span></div>
+        <div class="footer-links"><a href="index.html#about">Sobre mí</a><a href="index.html#services">Servicios</a><a href="index.html#projects">Proyectos</a></div>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/andr%C3%A9-pillihuaman/" target="_blank" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="https://www.behance.net/andrepillihu1" target="_blank" aria-label="Behance"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M7.803 5.731c.589 0 1.119.051 1.605.155.483.103.895.273 1.243.508.343.235.611.547.804.938.187.387.28.86.28 1.406 0 .604-.135 1.107-.404 1.512-.269.406-.673.737-1.207.994.724.226 1.267.615 1.624 1.169.357.553.538 1.22.538 2.002 0 .605-.113 1.127-.343 1.568-.226.437-.543.798-.95 1.077-.406.278-.877.49-1.415.624-.54.136-1.114.203-1.718.203H0V5.731h7.803zm-.351 4.972c.49 0 .891-.119 1.2-.354.31-.238.464-.604.464-1.1 0-.27-.05-.498-.148-.682-.099-.183-.237-.33-.415-.437-.178-.106-.386-.181-.623-.226-.237-.044-.49-.066-.758-.066H3.463v2.865h3.989zm.19 5.218c.285 0 .556-.027.808-.08.252-.054.473-.141.664-.262.19-.12.342-.284.454-.49.111-.207.167-.466.167-.774 0-.614-.172-1.058-.516-1.334-.341-.276-.809-.414-1.396-.414H3.463v3.354h4.179zm12.522-7.465c.586 0 1.131.1 1.629.3.5.2.928.488 1.287.862.36.375.637.83.834 1.366.197.537.295 1.14.295 1.81v.91H15.88c.043.666.252 1.178.635 1.539.38.36.879.54 1.506.54.46 0 .864-.104 1.21-.31.345-.207.575-.45.69-.73h2.836c-.44 1.28-1.102 2.196-1.985 2.743-.884.548-1.956.82-3.213.82-.872 0-1.66-.139-2.36-.416-.698-.278-1.297-.677-1.794-1.197-.497-.52-.882-1.15-1.156-1.89-.275-.742-.413-1.572-.413-2.49 0-.872.136-1.679.407-2.421.27-.741.652-1.375 1.146-1.905.493-.53 1.088-.941 1.785-1.232.698-.29 1.47-.436 2.32-.436zm.016 2.26c-.555 0-1.002.154-1.343.46-.34.308-.553.742-.637 1.301h3.903c-.073-.574-.277-1.01-.615-1.307-.337-.299-.775-.454-1.308-.454zm-2.08-5.252h4.826v1.61h-4.826v-1.61z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

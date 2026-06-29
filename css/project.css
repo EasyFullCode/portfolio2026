@@ -27,6 +27,7 @@
   flex-wrap: wrap;
 }
 .project-cat-hero {
+  background-color: var(--accent);
   padding: 4px 12px;
   border: 1px solid var(--border);
   border-radius: 100px;
@@ -34,7 +35,7 @@
   font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--text);
 }
 .project-hero-title {
   font-family: var(--font-display);
@@ -282,7 +283,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 24px 24px;
+  padding: 24px;
   gap: 8px;
   box-sizing: border-box;
 }
@@ -313,30 +314,60 @@
 .ds-color-name  { font-size: 12px; color: var(--text-muted); }
 .ds-color-hex   { font-size: 11px; color: var(--text-dim); font-family: monospace; }
 
+/* ---- TIPOGRAFÍA — variable por proyecto ---- */
+/*
+  Cada HTML de proyecto define en su <head>:
+    <style>
+      :root {
+        --ds-font-display: 'NombreFuente', sans-serif;
+        --ds-font-body:    'NombreFuente', sans-serif;
+      }
+    </style>
+  Si no se define, hereda var(--font-display) / var(--font-body) del sitio.
+*/
 .ds-typography  { display: flex; flex-direction: column; gap: 24px; }
 .ds-type-item   { padding: 24px; background: var(--bg); border: 1px solid var(--border); border-radius: 4px; }
 .case-section--alt .ds-type-item { background: var(--bg-3); }
-.ds-type-h1    { font-size: 28px; font-weight: 700; color: var(--text); font-family: 'Inter', sans-serif; margin-bottom: 8px; }
-.ds-type-h2    { font-size: 20px; font-weight: 600; color: var(--text); font-family: 'Inter', sans-serif; margin-bottom: 8px; }
-.ds-type-body  { font-size: 14px; font-weight: 400; color: var(--text-muted); line-height: 1.6; margin-bottom: 8px; }
-.ds-type-label { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px; }
+
+.ds-type-h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text);
+  font-family: var(--ds-font-display, var(--font-display));
+  margin-bottom: 8px;
+}
+.ds-type-h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+  font-family: var(--ds-font-display, var(--font-display));
+  margin-bottom: 8px;
+}
+.ds-type-body {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-muted);
+  font-family: var(--ds-font-body, var(--font-body));
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+.ds-type-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-family: var(--ds-font-body, var(--font-body));
+  margin-bottom: 8px;
+}
 .ds-type-meta  { font-size: 11px; color: var(--text-dim); }
 
+/* ---- COMPONENTES DS ---- */
 .ds-components       { display: flex; flex-direction: column; gap: 32px; }
 .ds-component-label  { font-size: 12px; color: var(--text-dim); margin-bottom: 12px; }
 .ds-component-row    { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
 
-.ds-btn           { padding: 9px 18px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: default; }
-.ds-btn--primary-rec  { background: #EE781E; color: #fff; }
-.ds-btn--secondary-rec{ background: transparent; color: #EE781E; border: 1px solid #EE781E; }
-.ds-btn--danger-rec   { background: #DC2626; color: #fff; }
-.ds-btn--ghost-rec  { background: transparent; color: var(--text-muted); border: 1px solid var(--border); }
-
-.ds-btn           { padding: 9px 18px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: default; }
-.ds-btn--primary-recl  { background: #004FCD; color: #fff; }
-.ds-btn--secondary-recl{ background: transparent; color: #004FCD; border: 1px solid #004FCD; }
-.ds-btn--danger-recl  { background: #DC2626; color: #fff; }
-.ds-btn--ghost-recl   { background: transparent; color: var(--text-muted); border: 1px solid var(--border); }
+.ds-btn          { padding: 9px 18px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: default; }
 
 .ds-badge        { padding: 4px 12px; border-radius: 100px; font-size: 12px; font-weight: 500; }
 .ds-badge--blue  { background: rgba(37,99,235,0.15);  color: #60a5fa; border: 1px solid rgba(37,99,235,0.3); }
@@ -432,7 +463,6 @@
 
   .case-img-block,
   .case-img-row { width: 100%; }
-
   .case-img-block img { width: 100%; height: auto; display: block; }
 
   .img-placeholder,
@@ -444,7 +474,6 @@
     min-width: unset;
     box-sizing: border-box;
   }
-
   .img-placeholder--wide { min-height: 220px; }
   .img-placeholder--half { min-height: 180px; }
   .img-placeholder--flow { min-height: 200px; }
